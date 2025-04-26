@@ -3,3 +3,6 @@ vendor.audio.feature.compr_voip.enable=false
 
 # Media
 vendor.media.omx=0
+
+# USB
+ro.usb.uvc.disable_video_encode_flag=true
