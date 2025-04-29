@@ -149,7 +149,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libstdc++_vendor
-    
+
 $(call soong_config_set,camera,override_format_from_reserved,true)
 
 # Camera Legacy HIDL deps
@@ -312,6 +312,8 @@ PRODUCT_PACKAGES += \
 # Lineage Health
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
+
+$(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
 
 # Logging
 SPAMMY_LOG_TAGS := \
