@@ -295,6 +295,9 @@ PRODUCT_PACKAGES += \
     libipanat \
     liboffloadhal
 
+# Init
+$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_xiaomi_lito)
+
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/lito-mtp-snd-card_Button_Jack.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/lito-mtp-snd-card_Button_Jack.kl
